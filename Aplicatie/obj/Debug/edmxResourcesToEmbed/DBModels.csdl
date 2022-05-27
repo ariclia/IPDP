@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DBApp1Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Airport">
+    <Key>
+      <PropertyRef Name="IDAirport" />
+    </Key>
+    <Property Name="IDAirport" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Locality" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Adress" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Type" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Flight">
+    <Key>
+      <PropertyRef Name="IDFlight" />
+    </Key>
+    <Property Name="IDFlight" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="TakeOffDate" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="TakeOffAirport" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="LandingDate" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="LandingAirport" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="EmargencyAirport" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="LOGIN">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="username" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="password" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Pilot">
+    <Key>
+      <PropertyRef Name="IDPilot" />
+    </Key>
+    <Property Name="IDPilot" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FirstName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="LastName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="NrLicense" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Locality" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityContainer Name="DBApp1Entities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Airports" EntityType="Self.Airport" />
+    <EntitySet Name="Flights" EntityType="Self.Flight" />
+    <EntitySet Name="LOGINs" EntityType="Self.LOGIN" />
+    <EntitySet Name="Pilots" EntityType="Self.Pilot" />
+  </EntityContainer>
+</Schema>

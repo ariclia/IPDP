@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DBApp1Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Airport">
+    <Key>
+      <PropertyRef Name="IDAirport" />
+    </Key>
+    <Property Name="IDAirport" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="50" />
+    <Property Name="Locality" Type="varchar" MaxLength="50" />
+    <Property Name="Adress" Type="varchar" MaxLength="50" />
+    <Property Name="Type" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Flight">
+    <Key>
+      <PropertyRef Name="IDFlight" />
+    </Key>
+    <Property Name="IDFlight" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="50" />
+    <Property Name="TakeOffDate" Type="varchar" MaxLength="50" />
+    <Property Name="TakeOffAirport" Type="varchar" MaxLength="50" />
+    <Property Name="LandingDate" Type="varchar" MaxLength="50" />
+    <Property Name="LandingAirport" Type="varchar" MaxLength="50" />
+    <Property Name="EmargencyAirport" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="LOGIN">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="username" Type="varchar" MaxLength="50" />
+    <Property Name="password" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Pilot">
+    <Key>
+      <PropertyRef Name="IDPilot" />
+    </Key>
+    <Property Name="IDPilot" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FirstName" Type="varchar" MaxLength="50" />
+    <Property Name="LastName" Type="varchar" MaxLength="50" />
+    <Property Name="NrLicense" Type="varchar" MaxLength="50" />
+    <Property Name="Locality" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityContainer Name="DBApp1ModelStoreContainer">
+    <EntitySet Name="Airport" EntityType="Self.Airport" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Flight" EntityType="Self.Flight" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="LOGIN" EntityType="Self.LOGIN" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Pilot" EntityType="Self.Pilot" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

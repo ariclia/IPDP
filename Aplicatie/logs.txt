@@ -1,0 +1,23 @@
+2022-05-18 20:26:59,803 [1] WARN Aplicatie.Form1 - Wrong credentials.
+2022-05-18 20:33:12,414 [1] INFO Aplicatie.Form1 - Bravo! Inca mai stii parola :))
+2022-05-18 20:34:24,612 [1] WARN Aplicatie.Form1 - Opaa! Da' ce am facut sefu' ?!
+2022-05-19 08:26:58,589 [1] INFO Aplicatie.Form1 - Bravo! Inca mai stii parola :))
+2022-05-19 08:31:32,960 [1] INFO Aplicatie.Form1 - Bravo! Inca mai stii parola :))
+2022-05-19 08:32:34,073 [1] INFO Aplicatie.Form1 - Bravo! Inca mai stii parola :))
+2022-05-19 08:33:05,408 [1] INFO Aplicatie.Form1 - Bravo! Inca mai stii parola :))
+2022-05-20 20:20:09,251 [1] INFO Aplicatie.Form1 - Bravo! Inca mai stii parola :))
+2022-05-20 20:21:07,608 [1] INFO Aplicatie.Form1 - Bravo! Inca mai stii parola :))
+2022-05-20 20:22:19,000 [1] INFO Aplicatie.Form1 - Bravo! Inca mai stii parola :))
+2022-05-20 20:24:07,462 [1] INFO Aplicatie.Form1 - Bravo! Inca mai stii parola :))
+2022-05-20 20:25:56,283 [1] INFO Aplicatie.Form1 - Bravo! Inca mai stii parola :))
+2022-05-20 20:41:16,779 [1] INFO Aplicatie.Form1 - Bravo! Inca mai stii parola :))
+2022-05-20 20:42:28,456 [1] INFO Aplicatie.Form1 - Bravo! Inca mai stii parola :))
+2022-05-20 20:44:57,199 [1] INFO Aplicatie.Form1 - Bravo! Inca mai stii parola :))
+2022-05-20 20:45:39,407 [1] INFO Aplicatie.Form1 - Bravo! Inca mai stii parola :))
+2022-05-20 20:51:08,385 [1] INFO Aplicatie.Form1 - Bravo! Inca mai stii parola :))
+2022-05-20 21:50:44,577 [1] INFO Aplicatie.Form1 - Bravo! Inca mai stii parola :))
+2022-05-20 22:43:27,164 [1] WARN Aplicatie.Form1 - Opaa! Da' ce am facut sefu' ?!
+2022-05-20 22:43:27,181 [1] ERROR Aplicatie.Form1 - Ai gresit parola sau/si usernameul!!! Noteaza daca nu tii minte!!!
+2022-05-20 23:20:54,618 [1] INFO Aplicatie.Form1 - Bravo! Inca mai stii parola :))
+2022-05-24 14:16:49,007 [1] INFO Aplicatie.Form1 - Bravo! Inca mai stii parola :))
+2022-05-24 14:19:28,457 [1] INFO Aplicatie.Form1 - Bravo! Inca mai stii parola :))

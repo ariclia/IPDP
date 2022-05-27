@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DBApp1ModelStoreContainer" CdmEntityContainer="DBApp1Entities">
+    <EntitySetMapping Name="Airports">
+      <EntityTypeMapping TypeName="DBApp1Model.Airport">
+        <MappingFragment StoreEntitySet="Airport">
+          <ScalarProperty Name="IDAirport" ColumnName="IDAirport" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Locality" ColumnName="Locality" />
+          <ScalarProperty Name="Adress" ColumnName="Adress" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Flights">
+      <EntityTypeMapping TypeName="DBApp1Model.Flight">
+        <MappingFragment StoreEntitySet="Flight">
+          <ScalarProperty Name="IDFlight" ColumnName="IDFlight" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="TakeOffDate" ColumnName="TakeOffDate" />
+          <ScalarProperty Name="TakeOffAirport" ColumnName="TakeOffAirport" />
+          <ScalarProperty Name="LandingDate" ColumnName="LandingDate" />
+          <ScalarProperty Name="LandingAirport" ColumnName="LandingAirport" />
+          <ScalarProperty Name="EmargencyAirport" ColumnName="EmargencyAirport" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LOGINs">
+      <EntityTypeMapping TypeName="DBApp1Model.LOGIN">
+        <MappingFragment StoreEntitySet="LOGIN">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="username" ColumnName="username" />
+          <ScalarProperty Name="password" ColumnName="password" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Pilots">
+      <EntityTypeMapping TypeName="DBApp1Model.Pilot">
+        <MappingFragment StoreEntitySet="Pilot">
+          <ScalarProperty Name="IDPilot" ColumnName="IDPilot" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="NrLicense" ColumnName="NrLicense" />
+          <ScalarProperty Name="Locality" ColumnName="Locality" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
